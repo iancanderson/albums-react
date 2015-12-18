@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+set -e
+
+# Set up environment variables
+cp .sample.env .env
+
+# Install dependencies
+npm install

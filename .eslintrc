@@ -1,0 +1,44 @@
+{
+  "extends": "eslint:recommended",
+  "ecmaFeatures": {
+    "modules": true,
+    "jsx": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "camelcase": [0],
+    "comma-dangle": [1, "always-multiline"],
+    "no-use-before-define": [0],
+    "no-underscore-dangle": [0],
+    "no-unused-vars": [1, {
+      "vars": "local", "varsIgnorePattern": "_",
+      "args": "after-used", "argsIgnorePattern": "_"
+      }],
+    "quotes": [1, "single", "avoid-escape"],
+    "semi": [2, "always"],
+    "react/jsx-boolean-value": [2, "always"],
+    "react/jsx-curly-spacing": [1, "never"],
+    "react/jsx-no-duplicate-props": 2,
+    "react/jsx-pascal-case": 2,
+    "react/jsx-quotes": [2, "single", "avoid-escape"],
+    "react/react-in-jsx-scope": 1,
+    "react/jsx-uses-react": 1
+  },
+  "globals": {
+    "API_HOST",
+    "beforeEach",
+    "describe": true,
+    "expect": true,
+    "it": true,
+    "runs": true,
+    "React": true,
+    "TestUtils": true
+  }
+}
